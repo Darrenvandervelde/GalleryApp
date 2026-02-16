@@ -1,8 +1,7 @@
 # GalleryApp – React Image Gallery
 
 ![GalleryApp Demo](./GalleryImg1.png)
-![GalleryApp Demo](./GalleryImg2.png)
-![GalleryApp Demo](./GalleryImg3.png)
+
 
 Check out the [live demo](https://galleryapp.vercel.app)
 
