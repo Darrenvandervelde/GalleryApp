@@ -1,0 +1,57 @@
+/* ===== Main Navigation Container ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+
+  /* Gradient fade from solid color to transparent */
+  background: 
+    linear-gradient(to bottom, #131a29 30%, rgba(27, 16, 41, 0.411) 70%),
+    url('https://wallpapercave.com/wp/wp4787738.jpg') bottom center no-repeat;
+
+  /* Make the star image smaller */
+  color: white;
+}
+
+
+
+/* ===== Logo ===== */
+nav img {
+  width: 40px;
+  margin-bottom: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* ===== Icon Section ===== */
+.IconSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ===== Icons ===== */
+.IconSection i {
+  font-size: 22px;
+  color: #9ca3af; /* Gray */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.IconSection i:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Active State Example */
+.IconSection i.active {
+  color: #3b82f6; /* Blue */
+}

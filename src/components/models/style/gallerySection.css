@@ -1,0 +1,145 @@
+.GalleryContainer {
+  padding: 30px;
+  margin-left: 80px;
+}
+
+.GalleryContainer h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  width: 150px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px ;
+  color: darkblue;
+  border-bottom: 5px solid darkblue;
+}
+
+.GalleryContainer h1 {
+ color: darkblue;
+}
+
+
+/* ===== Grid Layout ===== */
+.GalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Image Card ===== */
+.ImageCard {
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ImageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Effect */
+.ImageCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Modal Overlay ===== */
+.ImageModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 80px; /* sidebar width */
+  width: calc(100% - 80px);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  --webkit-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===== Modal Content ===== */
+.ImageModalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  animation: scaleIn 0.3s ease;
+}
+
+.ImageModalContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Close Button */
+.CloseButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.CloseButton:hover {
+  background: #ef4444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Download Button */
+.DownloadButton {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  background-color: #253b5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.DownloadButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Make the modal image responsive */
+.ModalImage {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 15px;
+}

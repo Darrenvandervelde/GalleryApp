@@ -1,0 +1,94 @@
+.UserContainer {
+  padding: 30px;
+  margin-left: 80px; /* sidebar space */
+}
+
+.UserContainer h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+/* User Card */
+.UserCard {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  max-width: 1920px;
+}
+
+/* Avatar Section */
+.AvatarSection img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3b82f6;
+}
+
+.AvatarPlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #9ca3af;
+  border: 2px solid #3b82f6;
+}
+
+/* User Info */
+.UserInfo h2 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.UserInfo p {
+  margin: 0 0 15px 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Inputs */
+.UserInfo input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.UserInfo input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Buttons */
+.UserInfo button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #111827;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.UserInfo button:hover {
+  background: #1f2937;
+  transform: translateY(-2px);
+}
