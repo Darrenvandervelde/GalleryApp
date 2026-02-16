@@ -3,7 +3,7 @@
 ![GalleryApp Demo](./Screenshot%202026-02-16%20165937.png)
 
 
-Check out the [live demo](https://galleryapp.vercel.app)
+Check out the [live demo](https://gallery-app-iota-bay.vercel.app)
 
 ---
 
