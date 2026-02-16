@@ -14,7 +14,7 @@ export const CollectionSection = () => {
 
   return (
     <div className="CollectionContainer">
-      <h1><img src="https://see.fontimg.com/api/rf5/rg9Rx/YmY1M2RjMTM1MTBhNGY0NGE5MDNkN2Y1OWMyMjUzMzMudHRm/Q29sbGVjdGlvbnM/ananda-black-personal-use-regular.png?r=fs&h=65&w=1000&fg=2848A9&bg=0C5DE2&tb=1&s=65"/></h1>
+      <h1><img src="https://see.fontimg.com/api/rf5/rg9Rx/YmY1M2RjMTM1MTBhNGY0NGE5MDNkN2Y1OWMyMjUzMzMudHRm/Q29sbGVjdGlvbnM/ananda-black-personal-use-regular.png?r=fs&h=65&w=1000&fg=2848A9&bg=0C5DE2&tb=1&s=65" alt="Image"/></h1>
 
       <div className="CollectionGrid">
         {collections.map((col) => (
