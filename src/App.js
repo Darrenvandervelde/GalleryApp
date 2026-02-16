@@ -8,7 +8,6 @@ import "./App.css";
 
 function App() {
   const [activeSection, setActiveSection] = useState("gallery");
-  const [darkMode, setDarkMode] = useState(false);
 
 
   const renderContent = () => {
