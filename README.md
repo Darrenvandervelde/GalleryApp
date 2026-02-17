@@ -52,8 +52,9 @@ GalleryApp/
 │ └── GalleryImg3.png
 ├── src/
 │ ├── components/
-│ │ ├── Gallery.js
-│ │ └── ImageCard.js
+│ │ ├── models/
+│ │ ├── style/
+│ │ └── navigationBar.js
 │ ├── App.js
 │ ├── index.js
 │ └── App.css
