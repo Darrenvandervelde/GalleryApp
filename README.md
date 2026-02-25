@@ -62,9 +62,6 @@ GalleryApp/
 └── README.md
 ```
 
-
-> ⚠️ *Update the structure based on your actual components and file organization.*
-
 ---
 
 ## Technology
